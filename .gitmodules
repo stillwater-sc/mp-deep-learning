@@ -13,3 +13,6 @@
 [submodule "ext/onnx/onnx"]
 	path = ext/onnx/onnx
 	url = https://github.com/onnx/onnx
+[submodule "ext/protocolbuffers/protobuf"]
+	path = ext/protocolbuffers/protobuf
+	url = https://github.com/protocolbuffers/protobuf.git

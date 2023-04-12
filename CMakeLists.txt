@@ -81,7 +81,15 @@ add_subdirectory(${MPDL_ROOT_DIR}/ext/stillwater-sc/mtl4 build_mtl4)
 
 # Process Abseil's CMake build system
 set(ABSL_PROPAGATE_CXX_STD ON)
-add_subdirectory(${MPDL_ROOT_DIR}/ext/google/abseil-cpp build_abseil-cpp) 
+add_subdirectory(${MPDL_ROOT_DIR}/ext/google/abseil-cpp build_abseil) 
+
+# Build protocolbuffer environment
+#add_subdirectory(${MPDL_ROOT_DIR}/ext/protocolbuffers/protobuf build_protobuf)
+# it appears this needs to be already installed in the environment 
+# for the ONNX cmake to pick up the dependencies to libs and tools, like the protobuf compiler, protoc
+
+# Build ONNX from source
+add_subdirectory(${MPDL_ROOT_DIR}/ext/onnx/onnx build_onnx)
 
 add_subdirectory(test)
 add_subdirectory(src)
