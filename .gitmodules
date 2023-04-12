@@ -10,3 +10,6 @@
 [submodule "ext/stillwater-sc/mtl4"]
 	path = ext/stillwater-sc/mtl4
 	url = https://github.com/stillwater-sc/mtl4
+[submodule "ext/onnx/onnx"]
+	path = ext/onnx/onnx
+	url = https://github.com/onnx/onnx
