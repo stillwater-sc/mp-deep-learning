@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.22)
-set(app_name mpadao_tests)
+set(app_name mpdl_tests)
 project(${app_name} C CXX)
 
-add_subdirectory(${MPADAO_ROOT_DIR}/ext/google/googletest build_gtest) 
+add_subdirectory(${MPDL_ROOT_DIR}/ext/google/googletest build_gtest) 
 
 include_directories(${VERSION_INCLUDE_HEADERS_DIR})
 include_directories(${PROJECT_SOURCE_DIR}/ext/google/googletest/include)

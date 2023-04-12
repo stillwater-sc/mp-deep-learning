@@ -9,4 +9,4 @@ set(folder "Tools")
 set_target_properties(${app_name} PROPERTIES FOLDER ${folder})
 
 target_link_libraries(${app_name} versionLib)
-install(TARGETS ${app_name} DESTINATION ${MPADAO_INSTALL_BIN_DIR})
+install(TARGETS ${app_name} DESTINATION ${MPDL_INSTALL_BIN_DIR})

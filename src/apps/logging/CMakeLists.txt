@@ -6,12 +6,12 @@ project(${app_name} CXX)
 set(CMAKE_CXX_STANDARD 20)
 
 # Process Abseil's CMake build system
-set(ABSL_PROPAGATE_CXX_STD ON)
-add_subdirectory(${MPADAO_ROOT_DIR}/ext/google/abseil build_abseil)
+#set(ABSL_PROPAGATE_CXX_STD ON)
+#add_subdirectory(${MPDL_ROOT_DIR}/ext/google/abseil-cpp build_abseil-cpp)
 
 # Universal is a C++ header-only library, so we do not need to build anything
-include_directories(${MPADAO_ROOT_DIR}/ext/stillwater-sc/universal/include)
-include_directories(${MPADAO_ROOT_DIR}/ext/google/abseil)
+include_directories(${MPDL_ROOT_DIR}/ext/stillwater-sc/universal/include)
+include_directories(${MPDL_ROOT_DIR}/ext/google/abseil-cpp)
 
 # source files that make up the command
 set(SOURCE_FILES
@@ -24,5 +24,5 @@ set_target_properties(${app_name} PROPERTIES FOLDER ${folder})
 
 # Declare dependency on the absl::log library
 target_link_libraries(${app_name} absl::log absl::strings)
-install(TARGETS ${app_name} DESTINATION ${MPADAO_INSTALL_BIN_DIR})
-#install(FILES my-consolidated-include.hpp DESTINATION ${MPADAO_INSTALL_INCLUDE_DIR})
+install(TARGETS ${app_name} DESTINATION ${MPDL_INSTALL_BIN_DIR})
+#install(FILES my-consolidated-include.hpp DESTINATION ${MPDL_INSTALL_INCLUDE_DIR})

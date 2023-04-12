@@ -13,9 +13,6 @@ add_subdirectory(apps/universal)
 # a more complicated example project that consists of multiple source files
 add_subdirectory(apps/polynomial)
 
-# a purposefull example of a mixed-precision experiment for the quadratic equation
-add_subdirectory(apps/quadratic)
-
 # a purposefull example of using Abseil 
 add_subdirectory(apps/logging)
 
