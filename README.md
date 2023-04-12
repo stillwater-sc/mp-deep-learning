@@ -1,4 +1,4 @@
-# Mixed Precision Algorithm Development and Optimization
+# Mixed Precision Deep Learning Algorithm Development and Optimization
 
 This repo contains a starting template for developing and optimizing mixed-precision Deep Learning algorithms for IoT, ML/DL/RL, SDR, and DSP applications that can be deployed on custom hardware accelerators while at the same time having an efficient collaboration with the host CPU.
 
