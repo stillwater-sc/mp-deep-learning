@@ -50,8 +50,11 @@ jobs:
           #cache: ${{runner.os == 'Windows'}}   this does not appear to work
           cache: ${{matrix.os == 'windows-latest'}}  # now you will need to track the Windows matrix tags explicitly
 
-      - name: Setup Protocol Buffers compiler
-        uses: Noelware/setup-protoc@1.0.2
+      - name: Setup Protoc compiler
+        uses: arduino/setup-protoc@1
+        with:
+          version: '3.22.x'
+          include-pre-releases: false
 
       - name: Configure CMake
         # Configure CMake in a 'build' subdirectory. 
