@@ -51,7 +51,7 @@ jobs:
           cache: ${{matrix.os == 'windows-latest'}}  # now you will need to track the Windows matrix tags explicitly
 
       - name: Setup Protoc compiler
-        uses: arduino/setup-protoc@1
+        uses: arduino/setup-protoc@v1.1.2
         with:
           version: '3.22.x'
           include-pre-releases: false
