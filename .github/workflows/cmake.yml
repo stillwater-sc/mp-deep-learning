@@ -40,6 +40,17 @@ jobs:
         with:
           submodules: recursive
       
+      - name: Build protobuf library
+        run: |
+          cd ext/protocolbuffers/protobuf
+          ./autogen.sh
+          ./autogen.sh
+          ./configure
+          make
+          make check
+          sudo make install
+          sudo ldconfig
+          
       - name: Install BOOST
         uses: MarkusJx/install-boost@v2.4.3
         id: install-boost
